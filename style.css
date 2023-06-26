@@ -30,3 +30,52 @@ body {
 ol, ul {
 	list-style: none;
 }
+main{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+header{
+	grid-column: 2/5;
+	grid-row: 1/2;
+	border: 1px solid black;
+}
+.search_part,.intro{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	border: 1px solid black;
+
+}
+header .notification{
+	display: flex;
+	gap: 5px;
+}
+.sidebar{
+	grid-column: 1/2;
+	grid-row: 1/5;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.content{
+	grid-column: 2/5;
+	grid-row: 2/5;
+	border: 1px solid black;
+	display: grid;
+}
+.projects{
+	grid-column: 1/4;
+	grid-row: 1/5;
+	border: 1px solid black;
+}
+.announcments{
+	grid-column: 4/5;
+	grid-row: 1/3;
+	border: 1px solid black;
+}
+.trendings{
+	grid-row: 3/5;
+	grid-column: 4/5;
+	border: 1px solid black;
+}
